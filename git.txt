@@ -1,0 +1,16 @@
+初始化仓库：git init
+添加当前所有文件进暂存区：git add .
+提交到本地仓库：git commit -m '备注说明'
+添加远程仓库（连接）：git remote add origin git@github.com:linfeng666/python.git
+提交到远程仓库：git push -u origin master
+
+问题
+sign_and_send_pubkey: signing failed: agent refused operation
+Permission denied (publickey).
+
+解决方法：
+eval "$(ssh-agent -s)"
+ssh-add
+
+
+
